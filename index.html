@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDEA Store</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/0ea49b02d4.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12 col-12">
+            <div class="btn-group">
+              <button
+                class="btn border-white dropdown-toggle my-md-4 my-2 text-white"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                USD
+              </button>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">ERU - Euro</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-12 text-center">
+            <h2 class="my-md-3 site-title primary-color text-white">
+              IDEA Store
+            </h2>
+          </div>
+          <div class="col-md-4 col-12 text-right">
+            <p class="my-md-4 header-links">
+              <a href="#" class="px-2">Sign In</a>
+              <a href="#" class="px-2">Create an Account</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Collections</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navbar-nav">
+            <li class="nav-item border rounded-circle mx-2 basket-icon">
+              <i class="fas fa-search p-2"></i>
+            </li>
+            <li class="nav-item border rounded-circle mx-2 basket-icon">
+              <i class="fas fa-shopping-basket p-2"></i>
+            </li>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <!-- First Slider -->
+      <div class="container-fluid p-0">
+        <div class="site-slider">
+          <div class="slider-one">
+            <div>
+              <img src="./assets/bg-3.jpg" class="img-fluid" alt="Banner1" />
+            </div>
+            <div>
+              <img src="./assets/bg-4.jpg" class="img-fluid" alt="Banner1" />
+            </div>
+            <div>
+              <img src="./assets/bg-5.jpg" class="img-fluid" alt="Banner1" />
+            </div>
+          </div>
+          <div class="slider-btn">
+            <span class="prev position-top">
+              <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="next position-top right-0">
+              <i class="fas fa-chevron-right"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Slider -->
+      <div class="container-fluid" style="margin: 5rem 0;">
+        <div class="site-slider-two px-md-4">
+          <div class="row slider-two text-center">
+            <div class="col-md-2 product pt-md-5 pt-4">
+              <img src="./assets/item-1-desk.jpg" alt="Product1" />
+              <h5 class="border site-btn btn-span">White Desk 73x50cm</h5>
+              <h5>Price: $75</h5> 
+              <h6 style="padding: 0 5rem;">
+                Description: A perfect use for
+                students to organize their work as well as a great table for
+                crafts.
+              </h6>
+              </p>
+            </div>
+
+            <div class="col-md-2 product pt-md-5 pt-4">
+              <img src="./assets/item-2-drawer.jpg" alt="Product2" />
+              <h5 class="border site-btn btn-span">Black Drawer 28x69cm </h5>
+              <h5>Price: $75</h5> 
+              <h6 style="padding: 0 5rem;">
+                Description: A smooth and elegant black drawer to help fit your white back ground needs.
+              </h6>
+            </div>
+
+            <div class="col-md-2 product pt-md-5 pt-4">
+              <img src="./assets/item-3-chair.jpg" alt="Product3" />
+              <h5 class="border site-btn btn-span">Black Rotating Chair </h5>
+              <h5>Price: $75</h5> 
+              <h6 style="padding: 0 5rem;">
+                Description: An everyday black office chair that fits well with a student table or office use.
+              </h6>
+            </div>
+
+            <div class="col-md-2 product pt-md-5 pt-4">
+              <img src="./assets/item-4-table.jpg" alt="Product4" />
+              <h5 class="border site-btn btn-span">Gray Table Tray 45x53cm</h5>
+              <h5>Price: $75</h5> 
+              <h6 style="padding: 0 5rem;">
+                Description: A perfect use for serving guests or can even be used as a side table. 
+              </h6>
+            </div>
+          </div>
+          <div class="slider-btn">
+            <span class="prev position-top">
+              <i class="fas fa-chevron-left fa-2x text-secondary"></i>
+            </span>
+            <span class="next position-top right-0">
+              <i class="fas fa-chevron-right fa-2x text-secondary"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+      <!-- Site footer -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">
+                Idea furniture was created in 1990, and is today a premium retail lifestyle brand, with close to three hundred stores in over sixty countries. We design, produce and sell contemporary furniture, accessories and lighting for living, dining, sleeping, home-office and outdoor spaces. We also help our customers create a personal home with our comprehensive in-home or store interior design service.
+              </p>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Categories</h6>
+              <ul class="footer-links">
+                <li><a href="#">Tables</a></li>
+                <li><a href="#">Chairs</a></li>
+                <li><a href="#">Desks</a></li>
+                <li><a href="#">Drawers</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by <b>IDEA</b></p>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>
+    
+
+    <!-- bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- slick -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
