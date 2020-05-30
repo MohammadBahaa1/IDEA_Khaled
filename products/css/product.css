@@ -45,17 +45,17 @@ body {
   background-color: #fff;
   width: 695px;
   height: 495px;
-  margin: auto;
-  position: absolute;
-  top: 0;
+  margin: 3rem auto;
+  position: relative;
+  /* top: 0;
   left: 0;
   bottom: 0;
-  right: 0;
+  right: 0; */
 
   border-radius: 8px;
-  box-shadow: 0px 0px 29px rgba(0, 155, 227, 0.6);
-  -webkit-box-shadow: 0px 0px 29px rgba(0, 163, 227, 0.6);
-  -moz-box-shadow: 0px 0px 29px rgba(0, 125, 227, 0.6);
+  box-shadow: 0px 0px 29px #44828A;
+  -webkit-box-shadow: 0px 0px 29px #44828A;
+  -moz-box-shadow: 0px 0px 29px #44828A;
 }
 
 /* FLEXBOX */

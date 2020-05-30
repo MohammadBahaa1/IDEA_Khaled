@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IDEA Store</title>
-
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="../assets/css/header.css" />
-    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <meta charset="utf-8" />
+    <title>Chair Product</title>
+    <link rel="stylesheet" href="../../assets/css/header.css" />
+    <link rel="stylesheet" href="../../assets/css/footer.css" />
+    <link rel="stylesheet" href="../css/product.css" />
     <!-- bootstrap -->
     <link
       rel="stylesheet"
@@ -20,15 +17,9 @@
       src="https://kit.fontawesome.com/0ea49b02d4.js"
       crossorigin="anonymous"
     ></script>
-    <!-- slick -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
   </head>
   <body>
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
       <div class="container">
         <div class="row">
@@ -61,7 +52,7 @@
         </div>
       </div>
 
-      <div class="container-fluid p-0">
+      <!-- <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <button
             class="navbar-toggler"
@@ -99,106 +90,83 @@
             </li>
           </div>
         </nav>
-      </div>
+      </div> -->
     </header>
 
-    <!-- Main Section -->
-    <main>
-      <!-- First Slider -->
-      <div class="container-fluid p-0">
-        <div class="site-slider">
-          <div class="slider-one">
-            <div>
-              <img
-                src="../assets/img/bg-3.jpg"
-                class="img-fluid"
-                alt="Banner1"
-              />
-            </div>
-            <div>
-              <img
-                src="../assets/img/bg-4.jpg"
-                class="img-fluid"
-                alt="Banner1"
-              />
-            </div>
-            <div>
-              <img
-                src="../assets/img/bg-5.jpg"
-                class="img-fluid"
-                alt="Banner1"
-              />
-            </div>
-          </div>
-          <div class="slider-btn">
-            <span class="prev position-top">
-              <i class="fas fa-chevron-left"></i>
-            </span>
-            <span class="next position-top right-0">
-              <i class="fas fa-chevron-right"></i>
-            </span>
-          </div>
-        </div>
-      </div>
+    <div id="wrapper">
+      <div class="box">
+        <div class="main-container">
+          <div class="left-cl">
+            <a href="../../home/index.html">
+              <div class="button-back">
+                <span>
+                  <svg
+                    width="26px"
+                    height="26px"
+                    viewBox="63 67 26 26"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+                    <g
+                      id="Page-1"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                      transform="translate(64.400240, 68.400000)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M11.4176,0 C5.1104,0 0,5.1152 0,11.4216 C0,17.7304 5.1104,22.8392 11.4176,22.8392 C17.724,22.8392 22.8384,17.7304 22.8384,11.4216 C22.8384,5.1152 17.724,0 11.4176,0 L11.4176,0 Z"
+                        id="Stroke-1"
+                        stroke="#FFFFFF"
+                      ></path>
+                      <polyline
+                        id="Stroke-3"
+                        stroke="#FFFFFF"
+                        points="10.46576 16.58848 5.67376 11.79648 10.46576 7.00448"
+                      ></polyline>
+                      <path
+                        d="M17.26984,11.79656 L5.67384,11.79656"
+                        id="Stroke-5"
+                        stroke="#FFFFFF"
+                      ></path>
+                    </g>
+                  </svg>
+                </span>
+              </div>
+            </a>
 
-      <!-- Second Slider -->
-      <div class="container-fluid" style="margin: 5rem 0;">
-        <div class="site-slider-two px-md-4">
-          <div class="row slider-two text-center">
-            <div class="col-md-2 product pt-md-5 pt-4">
-              <a
-                href="../products/1-desk/desk.html"
-                style="text-decoration: none;"
-              >
-                <img src="../assets/img/item-1-desk.jpg" alt="Product1" />
-                <h5 class="border site-btn btn-span">White Desk 73x50cm</h5>
-              </a>
-            </div>
+            <!-- <div class="diagonal"></div> -->
 
-            <div class="col-md-2 product pt-md-5 pt-4">
-              <a
-                href="../products/2-drawer/drawer.html"
-                style="text-decoration: none;"
-              >
-                <img src="../assets/img/item-2-drawer.jpg" alt="Product2" />
-                <h5 class="border site-btn btn-span">Black Drawer 28x69cm</h5>
-              </a>
-            </div>
-
-            <div class="col-md-2 product pt-md-5 pt-4">
-              <a
-                href="../products/3-chair/chair.html"
-                style="text-decoration: none;"
-              >
-                <img src="../assets/img/item-3-chair.jpg" alt="Product3" />
-                <h5 class="border site-btn btn-span">Black Rotating Chair</h5>
-              </a>
-            </div>
-
-            <div class="col-md-2 product pt-md-5 pt-4">
-              <a
-                href="../products/4-table/table.html"
-                style="text-decoration: none;"
-              >
-                <img src="../assets/img/item-4-table.jpg" alt="Product4" />
-                <h5 class="border site-btn btn-span">
-                  Gray Table Tray 45x53cm
-                </h5>
-              </a>
-            </div>
+            <!-- <img
+              src="https://res.cloudinary.com/dviuglhwb/image/upload/v1489676231/backpack_czvars.png"
+            /> -->
+            <img src="../../assets/img/item-3-chair.jpg" style="width: 100%;" />
           </div>
 
-          <div class="slider-btn">
-            <span class="prev position-top">
-              <i class="fas fa-chevron-left fa-2x text-secondary"></i>
-            </span>
-            <span class="next position-top right-0">
-              <i class="fas fa-chevron-right fa-2x text-secondary"></i>
-            </span>
+          <div class="right-cl">
+            <h2>Black Rotating Chair</h2>
+            <h3>$75.00</h3>
+            <div class="color-pick">
+              <button class="yellow"></button>
+              <button class="red"></button>
+              <button class="pink"></button>
+              <button class="blue"></button>
+            </div>
+            <h4>Description:</h4>
+            <p>
+              An everyday black office chair that fits well with a student table
+              or office use.
+            </p>
+            <button class="basket">Add to Basket</button>
           </div>
         </div>
       </div>
-    </main>
+    </div>
 
     <!-- Site footer -->
     <footer class="site-footer">
@@ -283,11 +251,5 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
-    <!-- slick -->
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="./js/script.js"></script>
   </body>
 </html>
