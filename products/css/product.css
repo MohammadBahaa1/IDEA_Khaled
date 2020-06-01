@@ -12,6 +12,16 @@
   outline: 0 !important;
 }
 
+:root {
+  --primary-color: #44828a;
+  --light-gray: #2b3032a1;
+  --border: #2b303218;
+  --text-color: #ff686b;
+  --roboto: "Roboto", sans-serif;
+  --gugi: "Gugi", cursive;
+  --sofia: "Sofia", cursive;
+}
+
 html {
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
@@ -103,8 +113,9 @@ p {
   z-index: 98;
 }
 
-.basket {
-  background-color: #71baff;
+.cart {
+  /* background-color: #71baff; */
+  background-color: var(--primary-color);
   border: none;
   padding: 20px 50px;
   border-radius: 100px;
@@ -131,7 +142,7 @@ p {
   transition: color 0.1s ease-out, transform 0.1s ease-in;
 }
 
-.basket:before {
+.cart:before {
   background: url("https://res.cloudinary.com/dviuglhwb/image/upload/v1489676297/cart_t8m4la.svg")
     no-repeat scroll center center / 100% auto rgba(0, 0, 0, 0);
   content: "";
@@ -144,7 +155,7 @@ p {
   vertical-align: middle;
   width: 30px;
 }
-.basket:hover {
+.cart:hover {
   background-color: #5ebfff;
   cursor: pointer;
   -ms-transform: scale(1.03);

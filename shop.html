@@ -26,6 +26,8 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+
+    <script src="./shop/js/shop.script.js"></script>
   </head>
   <body>
     <div class="d-flex" id="wrapper">
@@ -79,17 +81,86 @@
                 </h2>
               </div>
               <div class="col-md-4 col-12 text-right">
-                <p class="my-md-4 header-links">
-                  <a href="#" class="px-2">Sign In</a>
-                  <a href="#" class="px-2">Create an Account</a>
-                </p>
+                <!-- Shopping Cart Button -->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  style="margin: 2rem 0; background-color: white !important; color: var(--primary-color) !important;"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  Shopping Cart
+                </button>
+                <!-- Shopping Cart Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                        <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <!--  -->
+
+                        <section class="container content-section">
+                          <div class="cart-row">
+                            <span class="cart-item cart-header cart-column"
+                              >Item</span
+                            >
+                            <span class="cart-price cart-header cart-column"
+                              >Price</span
+                            >
+                            <span class="cart-quantity cart-header cart-column"
+                              >Quantity</span
+                            >
+                          </div>
+                          <div class="cart-items"></div>
+                          <div class="cart-total">
+                            <strong class="cart-total-title">Total</strong>
+                            <span class="cart-total-price">$0</span>
+                          </div>
+                        </section>
+
+                        <!--  -->
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button
+                          class="btn btn-primary btn-purchase"
+                          type="button"
+                        >
+                          Purchase
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="container-fluid p-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light"></nav>
           </div>
         </header>
 
@@ -97,70 +168,173 @@
         <main style="padding: 3rem 0;">
           <div class="container">
             <div class="row">
-              <div class="col-sm">
-                <a href="./products/3-chair/chair.html" class="view-product">
-                  <img src="./assets/img/item-1-desk.jpg" alt="Product1" />
-                  <b><span class="product-name">White Desk 73x50cm</span></b>
-                  <hr />
-                  <h5 class="price">$7.84</h5>
-                </a>
-                <a href="#" class="add-to-cart">Add to cart</a>
-              </div>
-              <div class="col-sm">
-                <a href="./products/3-chair/chair.html" class="view-product">
-                  <img src="./assets/img/item-3-chair.jpg" alt="Product3" />
-                  <b><span class="product-name">Black Rotating Chair</span></b>
-                  <hr />
-                  <h5 class="price">$24.68</h5>
-                </a>
-                <a href="#" class="add-to-cart">Add to cart</a>
-              </div>
-              <div class="col-sm">
-                <a href="./products/3-chair/chair.html" class="view-product">
-                  <img src="./assets/img/item-4-table.jpg" alt="Product4" />
-                  <b
-                    ><span class="product-name"
-                      >Gray Table Tray 45x53cm</span
-                    ></b
+              <div class="col-md shop-item">
+                <img
+                  class="shop-item-image"
+                  src="./assets/img/item-3-chair.jpg"
+                  alt="Product3"
+                />
+                <span class="shop-item-title">Black Rotating Chair</span>
+                <div class="shop-item-details">
+                  <span class="shop-item-price">$24.68</span>
+                  <br />
+                  <button
+                    class="btn btn-primary shop-item-button"
+                    type="button"
                   >
-                  <hr />
-                  <h5 class="price">$0.99</h5>
-                </a>
-                <a href="#" class="add-to-cart">Add to cart</a>
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div class="col-md shop-item">
+                <img
+                  class="shop-item-image"
+                  src="./assets/img/item-3-chair.jpg"
+                  alt="Product3"
+                />
+                <span class="shop-item-title">Black Rotating Chair</span>
+                <div class="shop-item-details">
+                  <span class="shop-item-price">$24.68</span>
+                  <br />
+                  <button
+                    class="btn btn-primary shop-item-button"
+                    type="button"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div class="col-md shop-item">
+                <img
+                  class="shop-item-image"
+                  src="./assets/img/item-3-chair.jpg"
+                  alt="Product3"
+                />
+                <span class="shop-item-title">Black Rotating Chair</span>
+                <div class="shop-item-details">
+                  <span class="shop-item-price">$24.68</span>
+                  <br />
+                  <button
+                    class="btn btn-primary shop-item-button"
+                    type="button"
+                  >
+                    Add to cart
+                  </button>
+                </div>
               </div>
             </div>
 
             <div class="row">
-              <div class="col-sm">
-                <a href="./products/3-chair/chair.html" class="view-product">
-                  <img src="./assets/img/item-1-desk.jpg" alt="Product1" />
-                  <b><span class="product-name">White Desk 73x50cm</span></b>
-                  <hr />
-                  <h5 class="price">$7.84</h5>
-                </a>
-                <a href="#" class="add-to-cart">Add to cart</a>
-              </div>
-              <div class="col-sm">
-                <a href="./products/3-chair/chair.html" class="view-product">
-                  <img src="./assets/img/item-3-chair.jpg" alt="Product3" />
-                  <b><span class="product-name">Black Rotating Chair</span></b>
-                  <hr />
-                  <h5 class="price">$24.68</h5>
-                </a>
-                <a href="#" class="add-to-cart">Add to cart</a>
-              </div>
-              <div class="col-sm">
-                <a href="./products/3-chair/chair.html" class="view-product">
-                  <img src="./assets/img/item-4-table.jpg" alt="Product4" />
-                  <b
-                    ><span class="product-name"
-                      >Gray Table Tray 45x53cm</span
-                    ></b
+              <div class="col-md shop-item">
+                <img
+                  class="shop-item-image"
+                  src="./assets/img/item-3-chair.jpg"
+                  alt="Product3"
+                />
+                <span class="shop-item-title">Black Rotating Chair</span>
+                <div class="shop-item-details">
+                  <span class="shop-item-price">$24.68</span>
+                  <br />
+                  <button
+                    class="btn btn-primary shop-item-button"
+                    type="button"
                   >
-                  <hr />
-                  <h5 class="price">$0.99</h5>
-                </a>
-                <a href="#" class="add-to-cart">Add to cart</a>
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div class="col-md shop-item">
+                <img
+                  class="shop-item-image"
+                  src="./assets/img/item-3-chair.jpg"
+                  alt="Product3"
+                />
+                <span class="shop-item-title">Black Rotating Chair</span>
+                <div class="shop-item-details">
+                  <span class="shop-item-price">$24.68</span>
+                  <br />
+                  <button
+                    class="btn btn-primary shop-item-button"
+                    type="button"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div class="col-md shop-item">
+                <img
+                  class="shop-item-image"
+                  src="./assets/img/item-3-chair.jpg"
+                  alt="Product3"
+                />
+                <span class="shop-item-title">Black Rotating Chair</span>
+                <div class="shop-item-details">
+                  <span class="shop-item-price">$24.68</span>
+                  <br />
+                  <button
+                    class="btn btn-primary shop-item-button"
+                    type="button"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md shop-item">
+                <img
+                  class="shop-item-image"
+                  src="./assets/img/item-3-chair.jpg"
+                  alt="Product3"
+                />
+                <span class="shop-item-title">Black Rotating Chair</span>
+                <div class="shop-item-details">
+                  <span class="shop-item-price">$24.68</span>
+                  <br />
+                  <button
+                    class="btn btn-primary shop-item-button"
+                    type="button"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div class="col-md shop-item">
+                <img
+                  class="shop-item-image"
+                  src="./assets/img/item-3-chair.jpg"
+                  alt="Product3"
+                />
+                <span class="shop-item-title">Black Rotating Chair</span>
+                <div class="shop-item-details">
+                  <span class="shop-item-price">$24.68</span>
+                  <br />
+                  <button
+                    class="btn btn-primary shop-item-button"
+                    type="button"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div class="col-md shop-item">
+                <img
+                  class="shop-item-image"
+                  src="./assets/img/item-3-chair.jpg"
+                  alt="Product3"
+                />
+                <span class="shop-item-title">Black Rotating Chair</span>
+                <div class="shop-item-details">
+                  <span class="shop-item-price">$24.68</span>
+                  <br />
+                  <button
+                    class="btn btn-primary shop-item-button"
+                    type="button"
+                  >
+                    Add to cart
+                  </button>
+                </div>
               </div>
             </div>
           </div>

@@ -1,3 +1,6 @@
+$(document).ready(function () {
+  $("wrapper").removeClass("toggled");
+});
 // First slider
 $(".slider-one").not(".slick-intialized").slick({
   autoplay: true,
